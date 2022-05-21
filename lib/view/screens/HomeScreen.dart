@@ -35,8 +35,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: TextStyle(
                       color: textColor,
                       fontSize: fontTitle,
-                      decoration: TextDecoration.none,
-                      decorationColor: Colors.red,
                     )),
               ),
               Container(
@@ -127,7 +125,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       );
                     },)
-                          :Center(child: CircularProgressIndicator());
+                          :Center(child: CircularProgressIndicator(color: backgroundScafold,));
                   },
               )
               )
