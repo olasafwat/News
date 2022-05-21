@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
-const white = Colors.white;
-const black = Colors.black;
-const red = Colors.red;
-const green = Colors.green;
-const lightblue = Colors.lightBlue;
-const yellow = Colors.yellow;
-const orange = Colors.deepOrange;
-const brown = Colors.brown;
-const lightgreen = Colors.greenAccent;
 
-const double fonttitle=18;
-const double fontsubtitle=16;
-const double fontsmall=12;
-const double fontbigger=36;
-const double fontlarge=20;
-const double fontxlarge=30;
+const Color white = Colors.white;
+const Color black = Colors.black;
+const Color colorGeneral = Colors.redAccent;
+const Color colorEntertainment = Colors.lightBlue;
+const Color colorBusiness = Colors.yellow;
+const Color colorScience = Colors.deepOrange;
+const Color colorHealth = Color(0xff8f4e49);
+const Color colorSports = Color(0xff5f8272);
+const Color colorTechnology = Colors.greenAccent;
+const Color textColor = Color(0xff676e4f);
+const Color backgroundScafold = Color(0xffbec2ac);
+const Color colorCard = Color(0xffe8ebd8);
+
+const double fontTitle=30;
+const double fontSubTitle=16;
+
+
 

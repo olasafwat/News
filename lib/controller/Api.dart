@@ -3,8 +3,8 @@ import 'package:http/http.dart' as http;
 import '../model/ArticlesModel.dart';
 class Api
 {
-  String ApiKey="79f66affb3fc4a598322e093a5eef04c";
- Future<List<ArticlesModel>> getGeneralArticles()async
+  static String ApiKey="79f66affb3fc4a598322e093a5eef04c";
+ static Future<List<ArticlesModel>> getArticles()async
   {
     List <ArticlesModel> listmodel =[];
     var url =Uri.parse("https://newsapi.org/v2/top-headlines?country=eg&apiKey=$ApiKey");
@@ -25,10 +25,10 @@ class Api
     return listmodel;
   }
 
-  Future<List<ArticlesModel>> getCategoryArticles(String category)async
+  static Future<List<ArticlesModel>> getCategoryArticles(String category)async
   {
     List <ArticlesModel> listmodel =[];
-    var url =Uri.parse("https://newsapi.org/v2/top-headlines?country=eg&$category=business&apiKey=$ApiKey");
+    var url =Uri.parse("https://newsapi.org/v2/top-headlines?country=eg&category=$category&apiKey=$ApiKey");
     var response = await http.get(url);
     var repsonebody = jsonDecode(response.body)["articles"];
 
