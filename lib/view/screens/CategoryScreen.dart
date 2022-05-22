@@ -62,7 +62,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                                       image: DecorationImage(
                                           fit: BoxFit.cover, image: NetworkImage(
                                           ("${snapshot.data[index].urlToImage}" == "null")
-                                              ?"https://www.google.com.eg/search?q=image+not+found+png&tbm=isch&ved=2ahUKEwj8gJ3Yp-b3AhWOVPEDHW_3BGUQ2-cCegQIABAA&oq=image+not+found+&gs_lcp=CgNpbWcQARgAMgQIABBDMgQIABBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgARQkQJYkQJgrQpoAHAAeACAAYMBiAH9AZIBAzAuMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=xHaDYvyOPI6pxc8P7-6TqAY&bih=754&biw=1536&hl=en#imgrc=ZhsHZdwRcvHOnM"
+                                              ?"https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png"
                                               :"${snapshot.data[index].urlToImage}")),
 
                                       borderRadius: BorderRadius.only(
